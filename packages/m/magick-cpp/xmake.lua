@@ -5,5 +5,5 @@ package("magick-cpp")
     add_versions("v7.1.1", "8876f135a90ba2e1d5621a3239a21fc02e0e0c07")
 
     on_install(function (pkg) 
-        os.cp("Magick++/lib", pkg:installdir("include"))
+        os.cp("Magick++/lib/*", pkg:installdir("include"))
     end)
